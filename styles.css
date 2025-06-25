@@ -30,7 +30,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px; /* Aumentiamo la larghezza da 200px a 300px */
+    width: 310px; /* Aumentiamo la larghezza da 200px a 300px */
     height: 60px; /* Riduciamo l’altezza da 100px a 60px */
     background-color: #d3d3d3; /* Grigio chiaro (#d3d3d3) invece di verde */
     border-radius: 20px; /* Manteniamo i bordi arrotondati */
