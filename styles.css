@@ -1,21 +1,35 @@
+html {
+    height: 100%;
+    overflow: hidden; /* Blocca scorrimento su html */
+}
 body {
-    margin: 0; /* Rimuoviamo tutti i margini */
-    padding: 0; /* Rimuoviamo tutti i padding */
-    height: 100vh; /* Altezza della viewport */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     background-color: white;
-    overflow: hidden; /* Blocca scorrimento verticale e orizzontale */
-    -webkit-overflow-scrolling: touch; /* Disabilita scorrimento iOS */
-    position: relative; /* Contesto per posizionamento assoluto */
-    touch-action: none; /* Disabilita azioni touch che causano scorrimento */
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: none;
+    position: relative;
 }
 h1 {
     color: black;
-    font-size: 15px; /* Riduciamo da 30px a 15px (2x più piccolo) */
+    font-size: 12px; /* Riduciamo da 15px a 12px */
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: absolute;
-    top: 10px; /* Distanza dal bordo superiore */
-    left: 50%; /* Centriamo orizzontalmente */
-    transform: translateX(-50%) skew(-10deg); /* Manteniamo l'inclinazione */
-    margin: 0; /* Rimuoviamo margini predefiniti */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Rimuoviamo skew(-10deg) */
+    margin: 0;
+}
+.rectangle {
+    position: absolute;
+    top: 50%; /* Centro verticale */
+    left: 50%; /* Centro orizzontale */
+    transform: translate(-50%, -50%); /* Centra esattamente */
+    width: 200px; /* Larghezza del rettangolo */
+    height: 100px; /* Altezza del rettangolo */
+    background-color: green; /* Colore verde */
+    border-radius: 20px; /* Bordi arrotondati */
 }
