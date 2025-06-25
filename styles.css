@@ -1,18 +1,18 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 100vh; /* Altezza della viewport */
     background-color: white;
-    /* Rimuoviamo flex per un posizionamento personalizzato */
+    overflow: hidden; /* Impedisce lo scorrimento */
+    position: relative; /* Contesto per il posizionamento assoluto */
 }
 h1 {
     color: black;
-    font-size: 40px;
+    font-size: 30px; /* Riduciamo da 40px a 30px per renderlo più piccolo */
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* Spostiamo in alto vicino al bordo */
     position: absolute;
     top: 10px; /* Distanza dal bordo superiore */
     left: 50%; /* Centriamo orizzontalmente */
-    transform: translateX(-50%); /* Correggiamo il centraggio */
+    transform: translateX(-50%) skew(-10deg); /* Incliniamo leggermente a sinistra (-10 gradi) */
     margin: 0; /* Rimuoviamo margini predefiniti */
 }
